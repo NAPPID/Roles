@@ -1,0 +1,6 @@
+---
+# tasks file for java_install
+- name: Installing Java on target machines
+  file:
+   name: "{{ file_name | default(omit) }}"
+   state: touch
