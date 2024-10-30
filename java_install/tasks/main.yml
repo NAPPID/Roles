@@ -4,3 +4,8 @@
   file:
    name: "{{ file_name | default(omit) }}"
    state: touch
+- name: Creating the directories for java
+  file:
+   name: "{{ item | default(omit) }}"
+   state: directory
+  loop: "{{ dirs }}"

@@ -1,3 +1,7 @@
 ---
 # defaults file for java_install
 file_name: /tmp/file123
+dirs:
+ - /tmp/java
+ - /tmp/jdk
+ - /tmp/java12
